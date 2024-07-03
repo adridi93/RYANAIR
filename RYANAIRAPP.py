@@ -89,9 +89,9 @@ def main():
 
         origin = st.text_input("Código del aeropuerto de origen (por ejemplo, MAD para Madrid):").upper()
         destination_countries = [
-            st.text_input("Introduzca el país de destino #1 (por ejemplo, Francia):"),
-            st.text_input("Introduzca el país de destino #2 (por ejemplo, Italia):"),
-            st.text_input("Introduzca el país de destino #3 (por ejemplo, Alemania):")
+            st.text_input("Introduzca el país de destino #1 (por ejemplo, Spain):"),
+            st.text_input("Introduzca el país de destino #2 (por ejemplo, Italy):"),
+            st.text_input("Introduzca el país de destino #3 (por ejemplo, Germany):")
         ]
         start_date_str = st.date_input("Fecha de inicio de búsqueda:", value=datetime.today())
         end_date_str = st.date_input("Fecha de fin de búsqueda:", value=datetime.today() + timedelta(days=30))
