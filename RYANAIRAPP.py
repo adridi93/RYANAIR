@@ -2,7 +2,7 @@ import streamlit as st
 from datetime import datetime, timedelta
 from ryanair import Ryanair
 from typing import List, Tuple
-
+api = Ryanair("EUR")
 def find_cheapest_flights(origin, destination, start_date, end_date, min_days, max_days, api) -> List[Tuple]:
     all_trips = []
 
